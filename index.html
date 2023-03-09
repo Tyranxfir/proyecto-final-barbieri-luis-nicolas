@@ -1,14 +1,372 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title>Curriculum Vitae de Andre Carlson</title>
+    <link rel="icon" href="favicon.ico" type="image/ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <h2>#eso es todo</h2>
+
+
+    <div class="grid-container1"> 
+  <img src="https://randomuser.me/api/portraits/men/37.jpg" alt="la imagen de Andre Carlsson" width="300" height="300"> 
+  <div class="item1">
+      <h1 style="
+    margin-bottom:15px;
+    border-bottom:5px solid black;
+    margin-left: 10px;
+    color: rgb(236, 101, 101);
+    font-family: bold">Mi perfil</h1>
+      <p style="font-family: bold; font-style: oblique;  margin-left: 10px "> Nacido en el año 1985 del mes de febrero. Especializado en Artes Modernas, de maquetado y marketing 3D, tambièn, aficionado por el diseño web y su roleplay. Resido en la Ciudad de Washington, Estados Unidos. Ademàs, mis habilidades tècnicas se concentran en el Diseño, Programacion y Marketing. </p>
+      <div style="width: 600px ; height: 120px">  
+
+      <div class="grid-containerfila">
+         
+         <div class="itemprimergrafico">
+           <svg width="200" height="120" class="itemprimergrafico" id="PrimerGrafico" style="visibility: unset;"> 
+           <circle class="Graficos_Habilidades1" id="Graficos_Habilidades1" style="display: none;" r="50" cx="50%" cy="50%" pathLength="100"></circle>                
+           </svg>
+           <h5 id="NivelTexto1" style=" display: none; text-align: center; font-family: roboto;">Diseño: Nivel Master</h5>
+         </div>
+    <div class="itemsegundografico">
+         <svg width="200" height="120" class="itemsegundografico" id="SegundoGrafico" style="visibility:unset;"> 
+           <circle class="Graficos_Habilidades2" id="Graficos_Habilidades2" style="display: none;" r="50" cx="50%" cy="50%" pathLength="100"></circle>               
+           </svg>
+           <h5 id="NivelTexto2" style="display:none; text-align: center; font-family: roboto;">Programaciòn: Nivel Intermedio</h5> 
+         </div>
+        <div class="itemtercergrafico">
+             <svg width="200" height="120" class="itemtercergrafico" id="TercerGrafico" style="visibility: unset;"> 
+           <circle  class="Graficos_Habilidades3" id="Graficos_Habilidades3" style="display: none;" r="50" cx="50%" cy="50%" pathLength="100"></circle>
+           </svg>
+           <h5 id="NivelTexto3" style=" display: none; text-align: center; font-family: roboto;">Marketing: Nivel Profesional</h5>
+         </div>
+        
+          <div class="filaboton">  
+             <button id="Boton1dehabilidades" style="display: all;" onclick="mostrar1();"> Mostrar Nivel de Habilidades
+           </button></div>
+          
+           <div class="itembotonesdeaccion" style="display: none;">
+             <button id="AgregarInformacion1" style="display: all;" onclick="Agregar1();"> Agregar Informaciòn en la secciòn Experiencia Profesional 
+           </button>
+           <button id="AgregarInformacion2" style="display: all;" onclick="Agregar2();"> Agregar Informaciòn en la secciòn Formaciòn Academica
+           </button>
+           <input type="text" id="texto" >  </input>
+           <input type="button" id="enviar" onclick= "enviartexto()" value="Enviar!"></input>  
+           </div>
+          </div>
+     <section style="width: 600px ; height: auto">   
+
+         <h1 style="
+    margin-top: 0px ;
+    margin-bottom:15px;
+    border-bottom:5px solid black;
+    margin-left: 10px;
+    color: rgb(236, 101, 101);
+    font-family: bold">Experiencia Profesional</h1>
+
+<aside>
+        <ul class="grid-containerfilasubs" id="ItemExperiencia">
+    <div class="item1" id="titulocontenido1">
+    <button style="width: 200px; height: 65px ; border: 0px ; background-color: #20c997; align-content: right-top; display: all;" id="Boton1desplegable" onclick="mostraritems1();"> 
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 50 200">
+
+  <polygon points="-120,0 150,0 150,110 -120,110" fill="rgb(56,240,179)" stroke-width="3" stroke="RoyalTransparent"></polygon>
+
+            <text x="-25" y="65" style="font-size: 40px; font-family: sans-serif; text-shadow:2px 2px 0 white">2017</text>  
+            
+            <polyline points="152,0 200,50 152,110" fill="rgb(56,240,179)" stroke-width="0" stroke="RoyalTransparent"></polyline>
    
+</svg>
+</button><div class="subtituloscontextuales" id="contenido1" style="display: none;">
+    <li> 
+      <h4>Especialista en Diseño Web y Telemarketer</h4>
+      <a> ORIGIN S.A, New York </a>
+      <p> Hasta la actualidad me desempeño en el puesto de estructuraciòn y diagramaciòn de sitios de negocios, pequeñas pymes y futuras empresas, con el objetivo de focalizar al cliente en su primera necesidad, como su comodidad tanto como la facilidad en el que se conduce por las redes.
+       </p>
+    </li>
+    </div>
+    </div>
+
+     <header class="grid-containerfilasubs" id="titulocontenido2" style="display: none;">
+    <div class="item1">
+    <button style="width: 200px; height: 65px ; border: 0px ; background-color: #20c997; align-content: right-top"> 
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 50 200">
+
+  <polygon points="-120,0 150,0 150,110 -120,110" fill="rgb(56,240,179)" stroke-width="3" stroke="RoyalTransparent"></polygon>
+
+            <text x="-25" y="65" style="font-size: 40px; font-family: sans-serif; text-shadow:2px 2px 0 white">2010</text>  
+            
+            <polyline points="152,0 200,50 152,110" fill="rgb(56,240,179)" stroke-width="0" stroke="RoyalTransparent"></polyline>
+   
+</svg>
+</button><div class="subtituloscontextuales">
+    <li> 
+      <h4>Programador Web/3D de videojuegos</h4>
+      <a> WATERFULK VULKAN, ARIZONA </a>
+      <p> Me desempeñe en la creaciòn de diversas etapas de los sitios web de la empresa de videojuegos, ademàs en el motor gràfico "vulcan" de sus productos; promoviendo a la producciòn de competencias web de sus equivalentes.  
+       </p>
+    </li>
+    </div>
+    </div>
+  </header>
+
+ <header class="grid-containerfilasubs" id="titulocontenido3" style="display: none;">
+    <div class="item1">
+    <button style="width: 200px; height: 65px ; border: 0px ; background-color: #20c997; align-content: right-top"> 
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 50 200">
+
+  <polygon points="-120,0 150,0 150,110 -120,110" fill="rgb(56,240,179)" stroke-width="3" stroke="RoyalTransparent"></polygon>
+
+            <text x="-25" y="65" style="font-size: 40px; font-family: sans-serif; text-shadow:2px 2px 0 white">2006</text>  
+            
+            <polyline points="152,0 200,50 152,110" fill="rgb(56,240,179)" stroke-width="0" stroke="RoyalTransparent"></polyline>
+   
+</svg>
+</button><div class="subtituloscontextuales" id="Contenido">
+    <li> 
+      <h4>Diseñador Gràfico/Web </h4>
+      <a> GRAPHS ORIGINAL, NEVADA </a>
+      <p> Me desempeñe en la estructuraciòn de notas, noticias y relatos de diversos diarios, ademàs la impresiòn y redacciòn vìa web.
+       </p>
+    </li>
+    </div>
+    </div>
+    </header>
+
+
+  </ul>
+</aside>
+
+<section style="width: 600px; height: auto;">   
+
+         <h1 style="
+    margin-top: 0px ;
+    margin-bottom:15px;
+    border-bottom:5px solid black;
+    margin-left: 10px;
+    color: rgb(236, 101, 101);
+    font-family: bold">Formaciòn Academica</h1>
+
+<aside>
+        <ul class="grid-containerfilasubs" id="itemformacion">
+    <div class="item1">
+    <button style="width: 200px; height: 65px ; border: 0px ; background-color: #20c997; align-content: right-top; display: all;" id="Boton2desplegable" onclick="mostraritems2();"> 
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 50 200">
+
+  <polygon points="-120,0 150,0 150,110 -120,110" fill="rgb(56,240,179)" stroke-width="3" stroke="RoyalTransparent"></polygon>
+
+            <text x="-25" y="65" style="font-size: 40px; font-family: sans-serif; text-shadow:2px 2px 0 white">2005</text>  
+            
+            <polyline points="152,0 200,50 152,110" fill="rgb(56,240,179)" stroke-width="0" stroke="RoyalTransparent"></polyline>
+   
+</svg>
+</button><div class="subtituloscontextuales" id="contenido2" style="display: none;">
+    <li> 
+      <h4>Tecnico Universitario Web/Animaciòn (3D/2D)</h4>
+      <a> Universidad de Cambridge, Cambridge </a>
+    </li>
+    </div>
+    </div>
+
+     <header class="grid-containerfilasubs" style="height: auto; display: none;" id="titulocontenido4">
+    <div class="item1">
+    <button style="width: 200px; height: 65px ; border: 0px ; background-color: #20c997; align-content: right-top"> 
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="200" height="110" viewBox="0 0 50 200">
+
+  <polygon points="-120,0 150,0 150,110 -120,110" fill="rgb(56,240,179)" stroke-width="3" stroke="RoyalTransparent"></polygon>
+
+            <text x="-25" y="65" style="font-size: 40px; font-family: sans-serif; text-shadow:2px 2px 0 white">2002</text>  
+            
+            <polyline points="152,0 200,50 152,110" fill="rgb(56,240,179)" stroke-width="0" stroke="RoyalTransparent"></polyline>
+   
+</svg>
+</button><div class="subtituloscontextuales">
+    <li> 
+      <h4> Tecnico en Sistemas Informaticos </h4>
+      <a> E.S.N Nª49, Condado de Louisiana </a>
+    </li>
+    </div>
+    </div>
+  </header>
+</ul>
+</aside>
+
+     </section>
+
+
+ 
+<div style="width: 600px; height: 230px ">
+        <div class="grid-container2">
+        <div class="onegraphicfooter">
+                <h2 style="
+    margin-top: 0px ;
+    margin-bottom:15px;
+    border-bottom:5px solid black;
+    margin-left: 10px;
+    color: rgb(236, 101, 101);
+    font-family: bold">Software</h2>
+          <svg style="display: none"  id="graficosoftware">
+          <text x="30" y="15" style="font-size: 10px; font-family: sans-serif; text-shadow:2px 2px 0 white">Autocad</text>
+          <rect class="autocad" x="30" y="20" width="100" height="20" fill="rgb(115, 153, 0)"/>
+          <text x="30" y="55" style="font-size: 10px; font-family: sans-serif; text-shadow:2px 2px 0 white">Dreamweaver</text>
+          <rect class="dreamweaver" x="30" y="60" width="200" height="20" fill="rgb(115, 153, 0)"/>
+          <text x="30" y="95" style="font-size: 10px; font-family: sans-serif; text-shadow:2px 2px 0 white">Adobe After Effects</text>
+          <rect class="effects" x="30" y="100" width="250" height="20" fill="rgb(115, 153, 0)"/>
+                    <div class="filaboton2">  
+          <button id="MostrarSoftware" onclick="mostrar2();"> Mostrar Nivel de Habilidades de Software
+           </button></div>
+          </svg>
+        </div>
+         <div class="twographicfooter">
+                <h2 style="
+    margin-top: 0px ;
+    margin-bottom:15px;
+    border-bottom:5px solid black;
+    margin-left: 10px;
+    color: rgb(236, 101, 101);
+    font-family: bold">Idiomas</h2>
+          <svg style="display: none" id="graficoidiomas"> 
+  
+         <rect class="portugues" x="20" y="20" width="100" height="30" fill= "rgb(242, 242, 242)" style="opacity: 75%"/> 
+
+         <rect class="español" x="110" y="20" width="100" height="60" fill= "rgb(204, 204, 204)" style="opacity: 75%"/>
+              
+         <rect class="ingles" x="200" y="20" width="100" height="90" fill= "rgb (0, 0, 0)"/>
+
+          </svg>
+
+          <div class="grid-containeridiomas" style="display: none;" id="displaytitulosidiomas"> 
+
+          <div class="titulosidiomas">
+          <span class="primertituloidioma"> Español</span>
+          <span class="segundotituloidioma"> Portugues</span>
+          <span class="tercertituloidioma">Ingles</span>
+            <svg class="svgprimertituloidioma">
+              <rect  x="5" y="5" width="5px" height="5px"  fill= "rgb(255, 255, 255)" stroke-width="1" stroke="black" style="opacity: 75%"/>
+            </svg>
+             <svg class="svgsegundotituloidioma">
+              <rect x="5" y="5" width="5px" height="5px" fill= "rgb(204, 204, 204)" stroke-width="1" stroke="black" style="opacity: 75%"/>
+            </svg>
+             <svg class="svgtercertituloidioma">
+              <rect x="5" y="5" width="5px" height="5px" fill= "rgb (0, 0, 0)" stroke-width="1" stroke="black"/>
+            </svg>
+          </div>
+        </div>
+          <div class="filaboton3">  
+          <button id="MostrarIdiomas" onclick="mostrar3();"> Mostrar Nivel de Habilidades de Idiomas
+           </button></div>
+        </div>
+        </div>
+      </div>
+ </div>
+   
+ </div><aside class="row">
+ <div class="col-sm-12" style="display:all;">
+  <iframe width="300" height="315" src="https://www.youtube.com/embed/AfL_QyeElJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  <button style="display: none;" id="ocultargraficos" onclick="ocultar()"> Ocultar gràficos
+    <script type="text/javascript" src="script.js"></script>
+  </button>
+  <div class="col-sm-12" style="margin-bottom: 40px; border-bottom:5px solid white">
+  <div class="col-sm-12">
+    <h3>Andre Carlsson</h3>
+  </div>
+  <div class="col-sm-12">
+    <p> Productor de marketing empresarial </p>
+  </div>
+</div>
+  <div class="col-sm-12">
+    <h3> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg> Informaciòn Personal</h3>
+  </div>
+  <div class="col-sm-6">
+    <p> Nacimiento </p>
+  </div>
+   <div class="col-sm-6">
+    <p> 8/2/1985 </p>
+  </div>
+  <div class="col-sm-6">
+    <p> Nacionalidad </p>
+  </div>
+   <div class="col-sm-6">
+    <p> Estadounidense </p>
+  </div>
+  <div class="col-sm-6">
+    <p> Estado civil </p>
+  </div>
+   <div class="col-sm-6">
+    <p> Casado </p>
+  </div>
+  <div class="col-sm-6" style="margin-bottom: 40px; border-bottom:5px solid white">
+    <p> Idiomas </p>
+  </div>
+   <div class="col-sm-6" style="margin-bottom: 40px; border-bottom:5px solid white">
+    <p> Ingles, Portugues, Español </p>
+  </div>
+   <div class="col-sm-12">
+    <h3>Contacto <icon> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+</svg> </icon></h3>
+  </div>
+  <div class="col-sm-12">
+    <p> Nº de Lìnea <icon> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+</svg> </icon> : (295) 786-0435 </p>
+  </div>
+  <div class="col-sm-12">
+    <p> Nº de Celular <icon> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+  <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+  <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+</svg> </icon> : 71 - 586-4189 </p>
+  </div>
+  <div class="col-sm-12">
+    <p> E-mail <icon> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+  <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+  <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+</svg> </icon> : andre.carlson@example.com </p>
+  </div>
+  <div class="col-sm-12" style="margin-bottom: 40px; border-bottom:5px solid white">
+    <p> Direcciòn <icon> <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+</svg> </icon> : 4967 Northaven Rd </p>
+  </div>
+   <div class="col-sm-12">
+    <h6>Redes Sociales</h6>
+  </div>
+  <div class="col-sm-12">
+    <a class="col-sm-8" rel="stylesheet" type="text/css" href="https://www.instagram.com/agusrodrii11_ok/" src="https://www.instagram.com/agusrodrii11_ok/" alt="Perfil Personal"> <h5> <icon> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+</svg> </icon> Perfil Personal</h5> </a>
+  </div>
+  <div class="col-sm-12">
+    <a  class= "col-sm-8" rel="stylesheet" type="text/css" href="https://www.youtube.com/channel/UCcW_xjGXlWhpI737BoVvTxw" src="https://www.youtube.com/channel/UCcW_xjGXlWhpI737BoVvTxw" alt="Perfil Personal"> <h5><icon><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+</svg></icon> Bluegamer 123</h5> </a>
+  </div>
+  <div class="col-sm-12">
+   <a class="col-sm-8" rel="stylesheet" type="text/css" href="https://www.facebook.com/people/Comblox-PC/100071033211912/" src="https://www.facebook.com/people/Comblox-PC/100071033211912/" alt="Perfil Personal"> <h5><icon> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+</svg></icon> Comblox PC </h5> </a> 
+  </div>
+</aside>
+
+</div>
+</section>
+
+  </div>
+<footer>
+  <h1> © Diseñado por Agustin Rodriguez </h1>
+</footer>
+
 </body>
 </html>
